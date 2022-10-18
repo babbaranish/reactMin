@@ -1,5 +1,6 @@
 import Navbar from "../../components/navbar/Navbar.component";
 import Sidebar from "../../components/sidebar/Sidebar.component";
+import Widget from "../../components/widgets/Widget.component";
 import "./home.styles.scss";
 function Home() {
     return (
@@ -7,7 +8,12 @@ function Home() {
             <Sidebar />
             <div className="homeContainer">
                 <Navbar />
-                Home Container
+                <div className="widgets">
+                    <Widget />
+                    <Widget />
+                    <Widget />
+                    <Widget />
+                </div>
             </div>
         </div>
     );

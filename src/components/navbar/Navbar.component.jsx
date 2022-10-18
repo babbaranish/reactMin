@@ -6,6 +6,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import ListIcon from "@mui/icons-material/List";
+import NotificationsIcon from "@mui/icons-material/Notifications";
 function Navbar() {
     return (
         <div className="navbar">
@@ -31,13 +32,18 @@ function Navbar() {
                         <FullscreenExitIcon className="icon" />
                     </div>
                     <div className="item">
+                        <NotificationsIcon className="icon" />
+                        <div className="counter">1</div>
+                    </div>
+                    <div className="item">
                         <ChatBubbleIcon className="icon" />
+                        <div className="counter">2</div>
                     </div>
                     <div className="item">
                         <ListIcon className="icon" />
                     </div>
                     <div className="item">
-                        <img src={pic} alt="author image" className="avtar" />
+                        <img src={pic} alt="author" className="avtar" />
                     </div>
                 </div>
             </div>
